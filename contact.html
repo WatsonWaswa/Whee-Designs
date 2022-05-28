@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact Us</title>
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <a href="" class="header_logo">Whee<span style="color:rgba(0, 225, 255, 0.849)">Designs</span> </a>
+        </div>
+
+        <nav class="nav" id="nav-menu">
+            <a href="#" class="header_close" id="close-menu"  >&times;</a>
+
+            <ul class="nav_list">
+                <li class="nav_item"> <a href="index.html" class="nav_link">Home</a> </li>
+                <li class="nav_item"> <a href="about.html" class="nav_link">About</a> </li>
+                <li class="nav_item"> <a href="services.html" class="nav_link">Services</a> </li>
+                <li class="nav_item"> <a href="team.html" class="nav_link">Team</a> </li>
+                <li class="nav_item"> <a href="#" class="nav_link">Contact</a> </li>
+            </ul>
+        </nav>
+
+        <div class="header_toggle" id="toggle-menu">
+                <div></div>
+                <div></div>
+                <div></div>
+        </div>
+    </header>
+
+
+    <section id="sect5">
+        <h2>Contact Us</h2>
+        <h3>Lets get in touch. Send us a message.</h3>
+
+        <form id="f-container"   action="https://formsubmit.co/cbef051d0a72c3ae31e48baffd04062f" method="POST">
+            <div id="f-column">
+                <label for="">Name</label>
+                <input class="input-box" type="text" name="Name" required>
+            </div>
+
+            <div id="f-column">
+                <label for="">Email</label>
+                <input class="input-box" type="email" name="Email" required>
+            </div>
+    
+            <div id="f-column">
+                <label for="">Phone number</label>
+                <input class="input-box" type="number" name="Phone number" required>
+            </div>
+
+            <div id="f-column">
+                <label for="">Message</label>
+                <input class="input-message" type="text" name="Message" required>
+            </div>
+
+            <div id="f-column">
+                <button type="submit" onclick="audio.play()">Send Message</button>
+            </div>
+
+        </form>
+
+    </section>
+
+
+
+    <script src="script.js"></script>
+
+    <script type="text/javascript">
+        const audio = new Audio();
+        audio.src = "sounds/click.mp3";
+
+    </script>
+</body>
+</html>
